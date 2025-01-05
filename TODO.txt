@@ -1,0 +1,14 @@
+Questions:
+-How password managers work
+-What hashing function to use
+
+Tasks:
+-Create SQL database
+-Create basic terminal interface
+-Hash passwords
+
+Requirements:
+-User needs to be able to type in site or app name or URL and get back password
+-Passwords stored in SQL database
+-Password retrieval from SQL database
+-auto copy password to clipboard

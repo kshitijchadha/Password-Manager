@@ -4,6 +4,15 @@ import random
 import string
 import pymysql
 from cryptography.fernet import Fernet
+from dotenv import load_dotenv
+import os
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Get the sensitive data from environment variables
+DB_PASSWORD = os.getenv("DB_PASSWORD")
+MASTER_PASSWORD = os.getenv("MASTER_PASSWORD")
 
 # Load encryption key
 with open("encryption_key.key", "rb") as key_file:
@@ -15,7 +24,7 @@ def connect_db():
     return pymysql.connect(
         host="localhost",
         user="root",  
-        password="krakkd123",  
+        password=DB_PASSWORD,  
         database="passwordmanager"
     )
 
@@ -34,7 +43,7 @@ def add_password(service, username, password):
 
 # Retrieve a password
 def retrieve_password(service, master_password):
-    if master_password != "krakkd123":
+    if master_password != MASTER_PASSWORD:
         messagebox.showerror("Error", "Invalid master password!")
         return
     db = connect_db()

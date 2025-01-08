@@ -1,4 +1,3 @@
-
-# Ignore .env and encryption key file
 .env
 encryption_key.key
+.venv/

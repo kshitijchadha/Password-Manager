@@ -14,6 +14,7 @@ load_dotenv()
 DB_PASSWORD = os.getenv("DB_PASSWORD")
 MASTER_PASSWORD = os.getenv("MASTER_PASSWORD")
 
+
 # Load encryption key
 with open("encryption_key.key", "rb") as key_file:
     KEY = key_file.read()

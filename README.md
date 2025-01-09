@@ -82,8 +82,8 @@ A simple password manager built using Python, Tkinter for the GUI, and MySQL for
 
 ![Hide Show Password](images/HideShowPassword.png)
 
-### Add Password
-- Clicking the "Add Password" button adds the password to the MySQL database, and a dialog box will confirm the successful addition of the password and its details.
+### Screenshot 5
+- Clicking the "Add Password" button adds the password to the MySQL database, and a pop-up will confirm the successful addition of the password and its details.
 
 ![Add Password](images/AddPassword.png)
 

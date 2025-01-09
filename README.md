@@ -61,58 +61,58 @@ A simple password manager built using Python, Tkinter for the GUI, and MySQL for
 
 ## Application Screenshots
 
-### Screenshot 1
+### Main Screen
 - After running the Python file `password_manager_gui.py`, we see the main screen with options to generate and manage passwords.
 
 ![Home](images/Theme.png)
 
-### Screenshot 2
+### Password Generation Options
 - These are the random password generation options. We can choose the password length (4-32 characters), and we can include uppercase, digits, and special characters.
 
 ![Password Generation Options](images/PasswordGenerationOptions.png)
 
-### Screenshot 3
+### Generate Password
 - After filling out the Service and Username fields, click "Generate Password" to let the program generate a secure password, or enter a custom one.
 - We can also see the strength of the generated password at the bottom.
 
 ![Generate Password](images/GeneratePassword.png)
 
-### Screenshot 4
+### Hide Show Password
 - By selecting the "Show Password" option, the generated password will be displayed for the user to see.
 
 ![Hide Show Password](images/HideShowPassword.png)
 
-### Screenshot 5
+### Add Password
 - Clicking the "Add Password" button adds the password to the MySQL database, and a dialog box will confirm the successful addition of the password and its details.
 
 ![Add Password](images/AddPassword.png)
 
-### Screenshot 6
+### Added Details on SQL
 - The user details in the MySQL database update in real-time after adding a new password.
 
 ![Added Details on SQL](images/AddedPasswordSQL.png)
 
-### Screenshot 7
+### Password Added is Encrypted
 - The password added to the database is encrypted, ensuring security and confidentiality.
 
 ![Password Added is Encrypted](images/EncryptedPasswordSQL.png)
 
-### Screenshot 8
+### Password Retrieval with Invalid Master Password
 - When attempting to retrieve a password, we need to enter the master password to verify the request. If the master password is incorrect, a pop-up will notify the user.
 
 ![Password Retrieval with Invalid Master Password](images/RetrievalInvalidMasterPassword.png)
 
-### Screenshot 9
+### Password Retrieval with Valid Master Password
 - If the master password is correct, the pop-up will show the corresponding service, username, and password.
 
 ![Password Retrieval with Valid Master Password](images/RetrievalValidMasterPassword.png)
 
-### Screenshot 10
+### Delete Password
 - To delete a password, select the service and hit the "Delete Password" button. A pop-up will confirm that the password was deleted successfully.
 
 ![Delete Password](images/DeletePassword.png)
 
-### Screenshot 11
+### Deleted Password in MySQL Database
 - The password is immediately deleted from the MySQL database in real-time.
 
 ![Deleted Password in MySQL Database](images/PasswordDeletedSQL.png)
